@@ -8,5 +8,5 @@ import { SidebarMenu } from './sidebar/sidebar.component';
 })
 export class AppComponent {
 
-  currentMenu!: SidebarMenu;
+  //currentMenu!: SidebarMenu;
 }

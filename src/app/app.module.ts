@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductModule } from './product/product.module';
 import { CategoryModule } from './category/category.module';
 import { MainModule } from './main/main.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -22,7 +23,10 @@ import { MainModule } from './main/main.module';
     // 앱 모듈
     MainModule,
     ProductModule,
-    CategoryModule
+    CategoryModule,
+
+    AppRoutingModule
+
   ],
   providers: [
     provideClientHydration()

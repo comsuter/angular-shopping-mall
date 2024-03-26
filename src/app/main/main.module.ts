@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { FooterComponent } from '../footer/footer.component';
+import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,14 +14,19 @@ import { FooterComponent } from '../footer/footer.component';
     NavbarComponent,
     SidebarComponent,
     FooterComponent,
+    MainDashboardComponent,
+    PageNotFoundComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,
     SidebarComponent,
     FooterComponent,
+    MainDashboardComponent,
+    PageNotFoundComponent,
   ]
 })
 export class MainModule { }

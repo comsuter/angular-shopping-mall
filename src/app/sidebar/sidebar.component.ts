@@ -9,11 +9,11 @@ export declare type SidebarMenu = 'not_selected' | 'product' | 'category';
 })
 export class SidebarComponent {
 
-  currentMenu: SidebarMenu = 'product'
-  @Output() changedMenu: EventEmitter<String> = new EventEmitter();
+  // currentMenu: SidebarMenu = 'product'
+  // @Output() changedMenu: EventEmitter<String> = new EventEmitter();
 
-  clickedMenu(menu: SidebarMenu) {
-    this.currentMenu = menu;
-    this.changedMenu.emit(menu);
-  }
+  // clickedMenu(menu: SidebarMenu) {
+  //   this.currentMenu = menu;
+  //   this.changedMenu.emit(menu);
+  // }
 }

@@ -2,12 +2,10 @@
 <div class="container-fluid">
   <div class="row">
 
-    <app-sidebar (changedMenu)="currentMenu == $event"></app-sidebar>
+    <app-sidebar></app-sidebar>
 
-    <main class="col-10 offset-2 pt-3" [ngSwitch]="currentMenu">
-      <div *ngSwitchCase="'product'">상품관리 뷰{{currentMenu}}asd</div>
-      <div *ngSwitchCase="'category'">카테고리 뷰{{currentMenu}}asd<</div>
-      <div *ngSwitchDefault>기본 뷰{{currentMenu}}asd</div>
+    <main class="col-10 offset-2 pt-3">
+      <router-outlet></router-outlet>
     </main>
 
   </div>
