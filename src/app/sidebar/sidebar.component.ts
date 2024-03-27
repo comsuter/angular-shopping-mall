@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
-export declare type SidebarMenu = 'not_selected' | 'product' | 'category';
+// export declare type SidebarMenu = 'not_selected' | 'product' | 'category';
 
 @Component({
   selector: 'app-sidebar',

@@ -9,6 +9,11 @@ import { CategoryModule } from './category/category.module';
 import { MainModule } from './main/main.module';
 import { AppRoutingModule } from './app-routing.module';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { SharedModule } from './shared/shared.module';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,9 +29,13 @@ import { AppRoutingModule } from './app-routing.module';
     MainModule,
     ProductModule,
     CategoryModule,
+    AppRoutingModule,
 
-    AppRoutingModule
-
+    /* 3rd Modules */
+    AngularFireModule.initializeApp(environment.firebase),
+    // AngularFireAuthModule,
+    // AngularFireDatabaseModule,
+    SharedModule
   ],
   providers: [
     provideClientHydration()
