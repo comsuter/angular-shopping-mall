@@ -1,10 +1,9 @@
-import { Base } from "../shared/base.model";
 import { SharedUtil } from "../shared/shared-util";
 
 export enum ProdStatus { WAIT_FOR_SALE, ON_SALE, NOT_FOR_SALE }
 export declare type Products = Product[];
 
-export class Product extends Base {
+export class Product {
     no: number;
     name: string;
     listPrice: number;
@@ -14,7 +13,6 @@ export class Product extends Base {
     catNo?: number;
 
     constructor(no: number, status: ProdStatus) {
-        super(true, SharedUtil.getCurrentDateTime(), '');
         this.no = no;
         this.name = '';
         this.listPrice = 0;

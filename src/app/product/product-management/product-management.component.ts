@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { ProductService } from '../../../service/product.service';
+import { ProductService } from './product.service';
 import { ProductModel } from '../../../model/product.model';
 
 @Component({

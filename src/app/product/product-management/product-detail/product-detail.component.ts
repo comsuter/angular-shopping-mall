@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { ProductModel } from '../../../../model/product.model';
-import { ProductService } from '../../../../service/product.service';
+import { ProductService } from '../product.service';
 import { Observable, filter, map, tap } from "rxjs";
 
 @Component({
