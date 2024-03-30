@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component';
 import { ProductModule } from './product/product.module';
 import { MainModule } from './main/main.module';
 import { AppRoutingModule } from './app-routing.module';
-import { CategoryModule } from './category/category.module';
 
 
 @NgModule({
@@ -23,14 +21,11 @@ import { CategoryModule } from './category/category.module';
     // 앱 모듈
     MainModule,
     ProductModule,
-    CategoryModule,
 
     // 앱 라우팅 모듈
     AppRoutingModule,
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

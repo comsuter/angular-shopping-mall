@@ -3,8 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PageNotFoundComponent } from './main/page-not-found/page-not-found.component';
 import { MainDashboardComponent } from './main/main-dashboard/main-dashboard.component';
-import { ProductManagementComponent } from './product/product-management/product-management.component';
-import { CategoryManagementComponent } from './category/category-management/category-management.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main-dashboard', pathMatch: 'full' },
