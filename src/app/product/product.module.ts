@@ -12,7 +12,7 @@ import { ProductRoutingModule } from './product-routing.module';
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule,
+    ProductRoutingModule, // 상품 도메인 라우팅 모듈 추가
   ]
 })
 export class ProductModule { }

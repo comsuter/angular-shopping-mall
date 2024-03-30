@@ -9,6 +9,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class SidebarComponent {
 
+  // 라우터 이용하면서 불필요
+
   // currentMenu: SidebarMenu = 'product'
   // @Output() changedMenu: EventEmitter<String> = new EventEmitter();
 

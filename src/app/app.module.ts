@@ -19,12 +19,13 @@ import { CategoryModule } from './category/category.module';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    // CommonModule,
 
     // 앱 모듈
     MainModule,
     ProductModule,
     CategoryModule,
+
+    // 앱 라우팅 모듈
     AppRoutingModule,
   ],
   providers: [

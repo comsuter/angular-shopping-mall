@@ -7,24 +7,18 @@ import { FooterComponent } from './footer/footer.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+const CORE_COMPONENTS = [ NavbarComponent, SidebarComponent, FooterComponent, MainDashboardComponent, PageNotFoundComponent ];
+
 @NgModule({
   declarations: [
-    NavbarComponent,
-    SidebarComponent,
-    FooterComponent,
-    MainDashboardComponent,
-    PageNotFoundComponent,
+    CORE_COMPONENTS
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule // 라우터 모듈
   ],
   exports: [
-    NavbarComponent,
-    SidebarComponent,
-    FooterComponent,
-    MainDashboardComponent,
-    PageNotFoundComponent,
+    CORE_COMPONENTS
   ]
 })
 export class MainModule { }
