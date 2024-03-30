@@ -9,9 +9,9 @@ import { Observable } from 'rxjs';
 export class NavbarComponent implements OnInit {
 
   appTitle = '상품관리 시스템';
-  session$!: Observable<boolean>;
-  sessionBtnName = '로그인';
 
+  // session$!: Observable<boolean>;
+  // sessionBtnName = '로그인';
 
   searchInput: number = 0 // 체크
 

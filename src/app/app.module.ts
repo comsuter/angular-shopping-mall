@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductModule } from './product/product.module';
 import { MainModule } from './main/main.module';
 import { AppRoutingModule } from './app-routing.module';
-import { CommonModule } from '@angular/common';
+import { CategoryModule } from './category/category.module';
 
 
 @NgModule({
@@ -24,6 +24,7 @@ import { CommonModule } from '@angular/common';
     // 앱 모듈
     MainModule,
     ProductModule,
+    CategoryModule,
     AppRoutingModule,
   ],
   providers: [
